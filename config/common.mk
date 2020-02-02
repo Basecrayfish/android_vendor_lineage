@@ -26,6 +26,9 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    lineage.updater.uri=https://lineageota.replicantprocess.com/api/v1/{device}/{type}/{incr}
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -130,12 +133,10 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Eleven \
     Jelly \
     LockClock \
     Profiles \
@@ -218,6 +219,10 @@ PRODUCT_PACKAGES += \
 # rsync
 PRODUCT_PACKAGES += \
     rsync
+
+# F-Droid Privileged Extension
+PRODUCT_PACKAGES += \
+    F-DroidPrivilegedExtension
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
