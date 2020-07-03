@@ -22,7 +22,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    lineage.updater.uri=https://lineageota.replicantprocess.com/api/v1/{device}/{type}/{incr}
+    lineage.updater.uri=https://lineageota.nightspc.dev/api/v1/{device}/{type}/{incr}
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
